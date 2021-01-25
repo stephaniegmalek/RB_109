@@ -1,0 +1,33 @@
+# ----- Easy 5 -----
+# After Midnight (Part 1)
+# Alphabetical Numbers
+# Bannerizer further exploration
+
+# ----- Easy 6 -----
+# Cute Angles
+
+# ----- Easy 7 -----
+
+# ----- Easy 8 -----
+
+# ----- Easy 9 -----
+
+# ----- Medium 1 -----
+# 1000 lights
+# Diamonds further exploration
+# math/periodicity of fibonaci sequence
+
+# ----- Medium 2 -----
+# matching parentheses further exploration - more efficient way to match all rather
+# than just separate methods that ultimately do almost exact same thing
+
+# unlucky days further exploration
+
+# ----- Advanced 1 -----
+# transpose mxn
+
+# ----- Study Group ----
+# all
+
+# ----- Watch Other Code -----
+# Part 1 - 2nd exercise

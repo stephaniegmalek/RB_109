@@ -1,0 +1,119 @@
+Small Code Challenge Problems
+  - 20 - 45 minutes
+  - typical solutions: 10 - 40 LOC
+  - used extensively in interviews for a reason
+    - mastery on a language
+    - logic / reasoning
+    - communication
+  - not a skill that you "acquire and file away", but needs a lot of practice
+  
+1. P - Understand the Problem
+  - requirements are explicit
+    - take notes
+    - ex: odd word problem
+  - requirements are not so explicit and need to be modeled
+    - examples need to be described in computational words
+    - ex: diamond of stars problem
+  - implicit knowledge needs to be captured
+    - convert to explicit rules in computational language
+    - ex: what century is it problem
+  - identifyinf and defining important terms and concepts
+    - ex: queen attack problem
+      - same row; same column; same diagonal
+  - ask questions to verify your understanding!
+  
+2. E - Examples / Test Cases
+  - Input / Output
+  - Test cases serve two purposes:
+    - help you understand the problem
+    - allow you to verify your solution
+  - happy paths
+    - combination of requirements; the "obvious" result
+  - edge cases
+    - focus on input
+    - emptiness (nil/null, "", [], {} )
+    - boundary conditions
+    - repetition / duplication
+    - data types
+  - Failures / Bad Input
+    - raise exceptions / report errors
+    - return a special value (nil/null, 0, "", [], etc)
+  - ask questions to verify your understanding!
+  
+3. D - Data Structure
+  - input data
+  - rules / requirements as data
+    - hash / object
+  - string, array, hash/object, number
+    - string
+      - concat, strip, reverse, etc
+      - Regular Expressions, split, replace, match
+      - ...
+    - array
+      - need to walk through it (iteration)
+      - index
+      - abstractions!!
+        - map
+        - reduce
+        - select/filter
+        - all
+        - ...
+    - hash / object
+      - lookup table / dictonary
+      - partition data for more efficient access downstream
+      - digest
+    - number
+      - math operations
+      - number as string may have advantage over numbers
+    - compound data structures
+      - array of arrays
+      - hash with array/object values, etc
+      
+4. A - Algorithm 
+  - Algorithm have to be described in the language of chosen data structures
+    - "then solve it" doesn't count
+  - Have to be really fluent with
+    - String / Regex
+    - Array
+      - Ruby: Enumerable
+      - JavaScript: Higher Order Functions
+    - Hash / Object
+      - Creation (default values)
+      - Access (default values)
+      - Iteration
+    - verify your algorithm with your examples / test cases
+    
+Abstraction
+  - Very important, reply on languge built in abstractions: String / Regex, Array
+    Hash/ Object
+  - Avoid solving big problems
+    - Always, always break bigger problems into smaller problems
+    - Don't try to walk through a wall
+  - lay out the general steps of an algorithm, without having to go to details 
+    - Try to solve a porblem in 1 - 2 sentences
+    - If you can't, raise your abstraction
+      - create helper methods / functions
+      - push detailed steps to methods / functions
+      
+BAD INITIAL ALGORITHM 
+  - use split to turn the string into an array
+  - iterate over each letter using each
+  -- if the letter is a vowel, use push to put it into the result array
+  -- if it's a consonant, use 'next'
+  - join the array back together into a new string
+  - return the new string
+  
+  GOOD INITIAL ALGORITHM
+  - initialize variable to hold the results
+  - iterate over the array
+  - look at each letter — if it's a vowel, put it in a result, and don't if it's not
+  - return the result variable
+      
+Interview Tips
+  - Communicatie 
+  - Getting to a working solutions >> no solution
+  - De-risking
+    - Check your building blocks
+      - run code often
+      - debug locally
+  - Manage your enery

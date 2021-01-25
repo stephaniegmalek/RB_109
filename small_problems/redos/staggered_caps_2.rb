@@ -1,0 +1,50 @@
+=begin
+----- Problem -----
+input: string
+output: new string but with staggered capitalization scheme
+
+rules:
+- characters that are not letter should not be changed and do not count when switching 
+  between upper and lowercase
+- first char upper
+
+----- Examples -----
+staggered_case('I Love Launch School!') == 'I lOvE lAuNcH sChOoL!'
+staggered_case('ALL CAPS') == 'AlL cApS'
+staggered_case('ignore 77 the 444 numbers') == 'IgNoRe 77 ThE 444 nUmBeRs'
+
+----- Data Structure -----
+strings, arrays
+
+----- Algorithm -----
+initialize result variable
+initialize need_cap variable
+iterate thru each char
+- check if alpha char
+  - if need cap, make upcase and add 
+  - if not, make down case and add 
+  - swap need_cap
+- otherwise add to result
+=end
+
+def staggered_case(string)
+  result = ''
+  need_upper = true
+  string.chars.each do |char|
+    if char =~ /[a-zA-Z]/
+      if need_upper
+        result += char.upcase
+      else
+        result += char.downcase
+      end
+      need_upper = !need_upper
+    else
+      result += char
+    end
+  end
+  result
+end
+
+p staggered_case('I Love Launch School!') == 'I lOvE lAuNcH sChOoL!'
+p staggered_case('ALL CAPS') == 'AlL cApS'
+p staggered_case('ignore 77 the 444 numbers') == 'IgNoRe 77 ThE 444 nUmBeRs'
